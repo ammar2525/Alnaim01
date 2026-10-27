@@ -120,14 +120,16 @@ p{margin:0}
 [data-skin="sand"] .frame{border-radius:40px 40px 40px 40px;box-shadow:var(--shadow)}
 
 /* statement */
-.state{color:#F5F8FF}
-.state .inner{position:relative;overflow:hidden;background:radial-gradient(120% 80% at 85% 0%,rgba(255,255,255,.28),transparent 55%),radial-gradient(90% 70% at 10% 100%,rgba(90,170,255,.35),transparent 60%),linear-gradient(140deg,rgba(28,92,196,.92),rgba(10,46,128,.95));border:1px solid rgba(255,255,255,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -1px 0 rgba(255,255,255,.08),0 24px 60px rgba(12,50,130,.35);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border-radius:12px;min-height:min(80vh,720px);display:grid;place-items:center;padding-inline:20px}
+.state{color:var(--on-band)}
+.state .inner{background:var(--band);border-radius:12px;min-height:min(80vh,720px);display:grid;place-items:center;padding-inline:20px}
 .state p{font-size:clamp(1.8rem,1rem + 3.2vw,3.6rem);font-weight:700;line-height:1.35;text-align:center;margin-inline:auto;max-width:none;padding-block:clamp(70px,10vw,120px)}
 .state .s1{display:block}
-.state .g{color:#F5C86B}
+.state .g{color:var(--hi)}
+[data-skin="sand"] .state .g{color:#F2B27E}
 .state .ul{position:relative;display:inline-block}
 .state .uline{position:absolute;inset:auto 0 -.04em 0;width:100%;height:.18em;overflow:visible;pointer-events:none}
 .state .uline path{fill:none;stroke:currentColor;stroke-width:4;stroke-linecap:round}
+[data-skin="pro"] .state .inner{background:#0B0B0C;border:1px solid var(--line)}
 
 /* numbers */
 .r4h{margin-top:clamp(48px,7vw,80px);font-size:clamp(1.5rem,1.1rem + 1.4vw,2.2rem);font-weight:700;text-align:center}
